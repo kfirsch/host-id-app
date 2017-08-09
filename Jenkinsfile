@@ -9,7 +9,7 @@ node {
     stage('Checkout git repo') {
       sh 'ls /root/.kube'
       sh 'which kubectl'
-      git branch: 'master', url: "https://github.com/iftachsc/host-id-app.git"
+      git branch: 'master', url: "https://github.com/kfirsch/host-id-app.git"
       gitCommit = sh(returnStdout: true, script: 'git rev-parse HEAD').trim()
       shortCommit = gitCommit.take(6)
       tag = "${shortCommit}.${env.BUILD_NUMBER}"
