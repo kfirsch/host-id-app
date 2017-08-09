@@ -1,3 +1,4 @@
+properties([pipelineTriggers([githubPush()])])
 def repo = 'dockerci1.azurecr.io'
 def image = "${repo}/host-id"
 def shortCommit = ''
