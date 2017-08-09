@@ -1,4 +1,4 @@
-def repo = 'dockerci.azurecr.io'
+def repo = 'dockerci1.azurecr.io'
 def image = "${repo}/host-id"
 def shortCommit = ''
 def tag = ''
